@@ -5,4 +5,4 @@ count = gets.chomp.to_i
 puts "場所を入力してください"
 prace = gets.chomp
 
-print price, " ", count, " ", prace,"\n"
+print price, " ", count, " ", prace, '\n'
