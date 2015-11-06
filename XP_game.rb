@@ -1,5 +1,5 @@
 
-@areas = {'hokkaidou': 0.0685, 'higashi_nihon': 0.08, 'nishi_nihon': 0.0625, 'shikoku': 0.04, 'kyusyu': 0.0825}
+@areas = {'hokkaidou'=> 0.0685, 'higashi_nihon'=> 0.08, 'nishi_nihon'=> 0.0625, 'shikoku'=> 0.04, 'kyusyu'=> 0.0825}
 
 def imput_data
   puts "値段を入力してください"
@@ -10,13 +10,14 @@ def imput_data
   @prace = gets.chomp
 end
 
-def tax(tax_rate)
-  tmp = 1 + tax_rate
+def tax
+  tmp = 1.0 + @areas[@prace]
+  #p @areas[@prace]
   @price *= @count
   @price *= tmp
 end
 
 imput_data
-tax(0.05)
+tax
 
 print @price, " ", @count, " ", @prace,"\n"
