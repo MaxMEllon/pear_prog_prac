@@ -1,5 +1,6 @@
 
 @areas = {'hokkaidou'=> 0.0685, 'higashi_nihon'=> 0.08, 'nishi_nihon'=> 0.0625, 'shikoku'=> 0.04, 'kyusyu'=> 0.0825}
+@sales = {1000 => 0.03, 5000 => 0.05, 7000 => 0.07, 10000 => 0.1, 50000 => 0.15}
 
 def imput_data
   puts "値段を入力してください"
