@@ -3,5 +3,5 @@
 
 # Auther
 
-[@mille](https://github.com/mille-f)
-[@maxmellon](https://github.com/MaxMEllon)
+- [@mille](https://github.com/mille-f)
+- [@maxmellon](https://github.com/MaxMEllon)
