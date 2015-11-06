@@ -12,8 +12,10 @@ def imput_data
 end
 
 def tax
-  tmp = 1.0 + @areas[@prace]
-  #p @areas[@prace]
+  if @sales[@price].to_i <= @price
+    @price -= @price.to_f * @sales[@price].to_f
+  end
+  tmp = 1.0 + @areas[@prace].to_f
   @price *= @count
   @price *= tmp
 end
